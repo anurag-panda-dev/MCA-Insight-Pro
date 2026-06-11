@@ -1,0 +1,691 @@
+You are a Senior Data Engineer, Data Scientist, Business Intelligence Architect, Data Visualization Expert, UI/UX Designer, and Streamlit Specialist.
+
+Build a production-grade MCA Corporate Intelligence Dashboard using Python and Streamlit.
+
+The application must function as a professional corporate analytics platform similar to Bloomberg, Crunchbase, Tableau, Power BI, and Tracxn.
+
+The dashboard should be optimized for analyzing the MCA (Ministry of Corporate Affairs) Master Data dataset updated till 30 June 2025.
+
+────────────────────────────────────────
+PROJECT NAME
+────────────────────────────────────────
+
+MCA Insight Pro
+
+Tagline:
+India's Corporate Intelligence & Business Analytics Platform
+
+────────────────────────────────────────
+IMPORTANT DATA REQUIREMENT
+────────────────────────────────────────
+
+The MCA Master Data CSV is already bundled with the application.
+
+DO NOT create:
+
+❌ File Upload Module
+❌ Dataset Upload Screen
+❌ CSV Validation Wizard
+❌ Encoding Detection UI
+
+Instead automatically load:
+
+data/company_master_data_2025_06_30.csv
+
+on application startup.
+
+Use:
+
+- Streamlit caching
+- DuckDB
+- PyArrow
+- Lazy Loading
+- Memory optimization
+
+for maximum performance.
+
+Example:
+
+@st.cache_data
+def load_data():
+    return pd.read_csv("data/mca_master_data_30_june_2025.csv")
+
+────────────────────────────────────────
+TARGET USERS
+────────────────────────────────────────
+
+• Business Analysts
+• Chartered Accountants
+• Startup Founders
+• Investors
+• Researchers
+• Government Officials
+• Market Intelligence Teams
+• Corporate Consultants
+• Students
+
+────────────────────────────────────────
+EXPECTED DATA FIELDS
+────────────────────────────────────────
+
+Examples:
+
+CIN
+
+Company Name
+
+ROC Code
+
+Registration Number
+
+Company Category
+
+Company Sub Category
+
+Class of Company
+
+Authorized Capital
+
+Paid Up Capital
+
+Number of Members
+
+Date of Incorporation
+
+Registered State
+
+Registered Address
+
+Email
+
+Listing Status
+
+Company Status
+
+Industry
+
+NIC Code
+
+Activity Description
+
+The system must automatically detect columns and adapt to schema changes.
+
+────────────────────────────────────────
+APPLICATION DESIGN
+────────────────────────────────────────
+
+Design should resemble modern SaaS products.
+
+Visual Style:
+
+• Premium
+• Corporate
+• Professional
+• Fast
+• Responsive
+• Mobile Friendly
+
+Use:
+
+• Glassmorphism
+• Gradient Headers
+• KPI Cards
+• Modern Sidebar
+• Smooth Animations
+• Plotly Visualizations
+• AgGrid Tables
+
+Support:
+
+• Light Theme
+• Dark Theme
+
+────────────────────────────────────────
+APPLICATION PAGES
+────────────────────────────────────────
+
+1. Executive Dashboard
+
+2. Company Explorer
+
+3. State Intelligence
+
+4. Industry Intelligence
+
+5. Capital Intelligence
+
+6. Company Comparison
+
+7. AI Insights
+
+8. Data Quality
+
+9. Reports & Export
+
+10. Favorites & Watchlist
+
+────────────────────────────────────────
+HOME PAGE
+────────────────────────────────────────
+
+Create a premium landing dashboard.
+
+Show:
+
+Hero Section
+
+Title:
+MCA Corporate Intelligence Dashboard
+
+Subtitle:
+
+Analyze and explore Indian companies from MCA Master Data updated till 30 June 2025.
+
+Display KPI Cards:
+
+• Total Companies
+• Active Companies
+• Inactive Companies
+• Strike-Off Companies
+• Total States
+• Total Industries
+• Total Authorized Capital
+• Total Paid-Up Capital
+• Average Company Age
+
+Include:
+
+• Trend Indicators
+• Icons
+• Animations
+
+────────────────────────────────────────
+GLOBAL SEARCH ENGINE
+────────────────────────────────────────
+
+The search system must be the core feature.
+
+Create a Google-like search experience.
+
+Search By:
+
+• Company Name
+• CIN
+• Registration Number
+• State
+• Industry
+• NIC Code
+
+Features:
+
+• Instant Search
+• Fuzzy Search
+• Typo Tolerance
+• Auto Suggestions
+• Search History
+• Saved Searches
+• Recent Searches
+• Bookmarks
+
+Performance Target:
+
+< 1 second search response.
+
+────────────────────────────────────────
+SMART FILTER SYSTEM
+────────────────────────────────────────
+
+Create a persistent sidebar filter panel.
+
+Filters:
+
+State
+
+Company Status
+
+Company Category
+
+Sub Category
+
+Industry
+
+NIC Code
+
+ROC
+
+Authorized Capital Range
+
+Paid-Up Capital Range
+
+Incorporation Year
+
+Incorporation Date Range
+
+Listing Status
+
+Class of Company
+
+Multi-select support.
+
+All visualizations update dynamically.
+
+────────────────────────────────────────
+COMPANY EXPLORER
+────────────────────────────────────────
+
+When a company is selected:
+
+Generate a professional company profile page.
+
+Display:
+
+Basic Information
+
+• Company Name
+• CIN
+• ROC
+• Registration Number
+• Incorporation Date
+• Company Age
+
+Legal Information
+
+• Company Status
+• Listing Status
+
+Classification
+
+• Category
+• Sub Category
+• Class of Company
+• Industry
+• NIC Code
+
+Location
+
+• State
+• Address
+• Email
+
+Financial Information
+
+• Authorized Capital
+• Paid-Up Capital
+• Capital Ratio
+
+Visual Components
+
+• Capital Gauge
+• Company Age Meter
+• Status Badge
+• Industry Ranking
+• State Ranking
+
+────────────────────────────────────────
+EXECUTIVE DASHBOARD
+────────────────────────────────────────
+
+Create advanced business intelligence KPIs.
+
+Show:
+
+• Total Companies
+• Active Companies
+• Dormant Companies
+• Strike-Off Companies
+• Under Liquidation
+• Total Capital
+• Average Capital
+• Total States
+• Total Industries
+• New Companies Per Year
+
+Include:
+
+• Trends
+• Growth Indicators
+• Summary Insights
+
+────────────────────────────────────────
+STATE INTELLIGENCE
+────────────────────────────────────────
+
+Generate advanced state-level analytics.
+
+Visualizations:
+
+1. Top States by Company Count
+
+2. Top States by Capital
+
+3. Active Companies by State
+
+4. State Growth Trends
+
+5. State-wise Industry Distribution
+
+6. State Heatmap
+
+7. Choropleth Map of India
+
+8. Capital Density Map
+
+9. Bubble Map
+
+10. Geographic Insights
+
+Automatically identify:
+
+• Fastest Growing States
+• Most Active States
+• Highest Capital States
+
+────────────────────────────────────────
+INDUSTRY INTELLIGENCE
+────────────────────────────────────────
+
+Visualizations:
+
+• Industry Distribution
+• Industry Growth
+• NIC Analysis
+• Capital by Industry
+• Industry Market Share
+• Industry Ranking
+
+Charts:
+
+• Treemap
+• Sunburst
+• Donut Charts
+• Heatmaps
+• Bar Charts
+
+Generate Industry Insights automatically.
+
+────────────────────────────────────────
+CAPITAL INTELLIGENCE
+────────────────────────────────────────
+
+Analyze:
+
+Authorized Capital
+
+Paid-Up Capital
+
+Capital Efficiency
+
+Capital Concentration
+
+Top Capital Holders
+
+Charts:
+
+• Pareto Analysis
+• Histograms
+• Box Plots
+• Violin Plots
+• Top 100 Companies Ranking
+• Capital Distribution Curves
+
+Generate:
+
+• Top Capital Insights
+• Outlier Detection
+• Wealth Concentration Analysis
+
+────────────────────────────────────────
+TREND ANALYTICS
+────────────────────────────────────────
+
+Analyze company incorporation patterns.
+
+Visualizations:
+
+• Yearly Growth
+• Monthly Growth
+• CAGR
+• Moving Average
+• Rolling Average
+• Seasonal Trends
+
+Generate:
+
+• Growth Insights
+• Trend Forecasts
+
+────────────────────────────────────────
+COMPANY COMPARISON TOOL
+────────────────────────────────────────
+
+Compare up to 5 companies simultaneously.
+
+Compare:
+
+• Capital
+• Age
+• Industry
+• Status
+• Category
+• ROC
+
+Visualizations:
+
+• Radar Charts
+• Comparison Tables
+• KPI Cards
+• Rankings
+
+Generate similarity scores.
+
+────────────────────────────────────────
+TOP COMPANIES LEADERBOARD
+────────────────────────────────────────
+
+Create ranking dashboards.
+
+Rank by:
+
+• Authorized Capital
+• Paid-Up Capital
+• Company Age
+• State
+• Industry
+
+Allow:
+
+• Top 10
+• Top 50
+• Top 100
+
+Export rankings.
+
+────────────────────────────────────────
+AI INSIGHTS ENGINE
+────────────────────────────────────────
+
+Automatically generate executive-level observations.
+
+Examples:
+
+"The majority of companies are concentrated in Maharashtra."
+
+"Manufacturing is the largest industry by company count."
+
+"Most companies were incorporated between 2015 and 2020."
+
+Generate:
+
+• Dataset Summary
+• Industry Summary
+• State Summary
+• Capital Summary
+• Growth Summary
+
+Display 30+ smart insights.
+
+────────────────────────────────────────
+NATURAL LANGUAGE QUERY ENGINE
+────────────────────────────────────────
+
+Create a ChatGPT-like query interface.
+
+Examples:
+
+Show active IT companies in West Bengal
+
+Show manufacturing companies incorporated after 2020
+
+Show top 50 companies by capital
+
+Show fintech companies in Karnataka
+
+Convert natural language to filters automatically.
+
+────────────────────────────────────────
+WATCHLIST SYSTEM
+────────────────────────────────────────
+
+Allow users to:
+
+• Bookmark Companies
+• Save Favorites
+• Save Searches
+• Track Frequently Viewed Companies
+
+Store locally.
+
+────────────────────────────────────────
+DATA QUALITY CENTER
+────────────────────────────────────────
+
+Analyze:
+
+• Missing Values
+• Duplicate Records
+• Invalid CIN
+• Invalid Emails
+• Data Completeness
+
+Generate:
+
+• Quality Score
+• Validation Reports
+
+────────────────────────────────────────
+REPORTING MODULE
+────────────────────────────────────────
+
+Generate:
+
+PDF Reports
+
+Excel Reports
+
+CSV Exports
+
+PNG Charts
+
+PowerPoint Reports
+
+One-click downloads.
+
+────────────────────────────────────────
+PERFORMANCE REQUIREMENTS
+────────────────────────────────────────
+
+Dataset Size:
+
+100,000+ to Millions of Records
+
+Use:
+
+• DuckDB
+• PyArrow
+• Pandas Optimization
+• Streamlit Cache
+• Virtualized Tables
+• AgGrid
+• Lazy Loading
+• Server-side Filtering
+
+Target:
+
+Dashboard Load < 5 sec
+
+Search < 1 sec
+
+Filter Response < 2 sec
+
+────────────────────────────────────────
+TECH STACK
+────────────────────────────────────────
+
+Frontend:
+
+• Streamlit
+• Plotly
+• AgGrid
+• Streamlit Option Menu
+• Streamlit Extras
+
+Backend:
+
+• Python
+
+Libraries:
+
+• Pandas
+• NumPy
+• Plotly
+• DuckDB
+• PyArrow
+• Scikit-Learn
+• Altair
+• OpenPyXL
+• ReportLab
+• FuzzyWuzzy / RapidFuzz
+
+────────────────────────────────────────
+PROJECT STRUCTURE
+────────────────────────────────────────
+
+Generate complete source code with:
+
+app.py
+
+pages/
+
+components/
+
+services/
+
+utils/
+
+assets/
+
+reports/
+
+data/
+
+requirements.txt
+
+README.md
+
+Dockerfile
+
+docker-compose.yml
+
+.streamlit/config.toml
+
+Include:
+
+• Type Hints
+• Logging
+• Error Handling
+• Modular Architecture
+• Reusable Components
+• Clean Code Principles
+• Production Ready Design
+
+The final result should feel like a premium MCA Corporate Intelligence Platform used by analysts, investors, consultants, founders, researchers, and government agencies.
