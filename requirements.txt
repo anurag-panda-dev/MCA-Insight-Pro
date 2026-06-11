@@ -1,0 +1,12 @@
+streamlit>=1.28.0
+pandas>=2.1.0
+numpy>=1.24.0
+plotly>=5.18.0
+pyarrow>=13.0.0
+scikit-learn>=1.3.0
+altair>=5.1.0
+openpyxl>=3.1.0
+reportlab>=4.0.0
+rapidfuzz>=3.5.0
+python-dateutil>=2.8.0
+requests>=2.31.0
